@@ -1,5 +1,7 @@
 package dk.cphbusiness.challengeone.model
 
+import java.io.Serializable
+
 /*
  val firstName
  var lastName
@@ -10,7 +12,7 @@ package dk.cphbusiness.challengeone.model
  divorce()
  */
 
-open class Person(val firstName: String, var lastName: String) {
+open class Person(val firstName: String, var lastName: String) : Serializable {
     private var spouse: Person? = null
 
     var age = 0

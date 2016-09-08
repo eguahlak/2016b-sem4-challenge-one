@@ -16,4 +16,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <EditText
+        android:text = "aksjdlaksjdflkasjf"
+        android:hint="Indtast fornavn her"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_below="@id/greeting"
+        />
+
+
 </RelativeLayout>

@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter
 import android.widget.Toast
 import dk.cphbusiness.challengeone.model.Chief
 import dk.cphbusiness.challengeone.model.Indian
+import dk.cphbusiness.challengeone.model.Person
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -33,8 +34,11 @@ class MainActivity : AppCompatActivity() {
                 employees)
         carList.onItemClickListener = AdapterView.OnItemClickListener {
             parent, view, pos, id ->
-                val clicked = carList.getItemAtPosition(pos)
-                Toast.makeText(this, "clicked: "+clicked, Toast.LENGTH_LONG).show()
+                val clicked : Person = carList.getItemAtPosition(pos) as Person
+                val intent = Intent(this, PeopleActivity::class.java)
+                intent.putExtra("person", clicked)
+                startActivityForResult(intent, 4712)
+//                Toast.makeText(this, "clicked: "+clicked, Toast.LENGTH_LONG).show()
             }
 
         }
