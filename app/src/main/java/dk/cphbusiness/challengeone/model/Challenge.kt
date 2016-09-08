@@ -37,6 +37,7 @@ open class Person(val firstName: String, var lastName: String) {
 //        spouse.spouse = null
         }
 
+    override fun toString() = firstName+" "+lastName
     }
 
 abstract class Employee(firstName: String, lastName: String) : Person(firstName, lastName) {

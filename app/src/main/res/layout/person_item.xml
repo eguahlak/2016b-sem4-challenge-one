@@ -8,11 +8,13 @@
         android:id="@+id/firstName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="25dp"
         />
 
     <TextView
         android:id="@+id/lastName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="#ff00e1"
         />
 </LinearLayout>

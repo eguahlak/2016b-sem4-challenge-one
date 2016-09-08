@@ -9,4 +9,11 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="dk.cphbusiness.challengeone.PeopleActivity">
 
+    <TextView
+        android:id="@+id/greeting"
+        android:text="We are on peoples page"
+        android:textSize="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
 </RelativeLayout>

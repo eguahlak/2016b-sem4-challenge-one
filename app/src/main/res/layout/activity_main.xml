@@ -15,6 +15,13 @@
         android:layout_height="wrap_content"
         android:text="Hello World!" />
 
+    <Button
+        android:text="Vis personer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showPeople"
+        android:layout_toRightOf="@id/message"
+        />
     <ListView
         android:layout_below="@id/message"
         android:id="@+id/carList"
